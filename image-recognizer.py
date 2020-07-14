@@ -19,6 +19,7 @@ visual_recognition = VisualRecognitionV3(
     '2018-03-19',
     my_api_key)
 
+#getting the image from the root directory
 with open('./testimage.jpg', 'rb') as images_file:
     classes = visual_recognition.classify(
         images_file,
